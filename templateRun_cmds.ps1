@@ -5,9 +5,4 @@ $containerName = "backupdata"
   
   
   
-New-AzResourceGroupDeployment -Name $deploymentName -ResourceGroupName $resourceGroupName `  
-  -TemplateUri "storage-template.json" `  
-  -TemplateParameterObject @{  
-    "storageAccountName" = $storageAccountName  
-    "containerName" = $containerName  
-  }  
+New-AzResourceGroupDeployment -Name $deploymentName -ResourceGroupName $resourceGroupName -TemplateUri "https://raw.githubusercontent.com/An1ket26/ps_codes/master/storage-template.json" -TemplateParameterObject @{"storageAccountName" = $storageAccountName "containerName" = $containerName}  
