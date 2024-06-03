@@ -36,10 +36,7 @@
       "name": "[concat(parameters('storageAccountName'), '/default/', parameters('containerName'))]",    
       "dependsOn": [    
         "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName'))]"    
-      ],    
-      "properties": {    
-        "publicAccess": "None"    
-      }    
+      ]  
     }    
   ]    
 }  
